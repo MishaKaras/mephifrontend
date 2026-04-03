@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3</title>
+    <style>
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: darkslategrey;
+            padding: 14px 30px;
+            z-index: 10;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 24px;
+            font-size: 16px;
+        }
+        
+        body {
+            padding-top: 60px;
+        }
+
+        .filler {
+            height: 2000px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Главная</a>
+        <a href="#">Каталог</a>
+        <a href="#">Контакты</a>
+        <a href="#">О нас</a>
+    </nav>
+
+    <div>
+        <h2>При прокрутке меню остается</h2>
+        <div class="filler"></div>
+    </div>
+</body>
+</html>

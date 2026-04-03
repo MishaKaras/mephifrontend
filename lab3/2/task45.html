@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задания 4-5</title>
+    <style>
+        #circle {
+            width: 60px;
+            height: 60px;
+            background-color: blue;
+            border-radius: 50%;
+            pointer-events: none;
+            position: fixed;
+            transform: translate(-30px, -30px); 
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+
+    <script>
+        const circle = document.getElementById("circle");
+        document.addEventListener('mousemove', function(event) {
+            circle.style.left = event.clientX + 'px';
+            circle.style.top = event.clientY + 'px';
+        });
+    </script>
+</body>
+</html>

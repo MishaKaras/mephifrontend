@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks 1-2</title>
+    <style>
+        button {
+            margin: 8px;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Добро пожаловать!</h1>
+    <p><i>Приветствуем</i> <u>вас</u> <b>в нашем</b> <a href="https://example.com/">магазине</a>!</p>
+
+    <p>
+        &lt;h1&gt;Теорема Пифагора&lt;/h1&gt;: 
+        <i>c</i><sup>2</sup> = <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup>
+    </p>
+
+    <table width="400px" border="1" cellspacing="0px">
+        <tr>
+            <td colspan="2">Информация</td>
+        </tr>
+        <tr>
+            <td>Старая цена: <s>1000</s> &#8381;</td>
+            <td>Новая цена: 500 &#8381;</td>
+        </tr>
+    </table>
+
+    <section id="t34">
+        <h1>Задания 3-4: кликер.</h1>
+        <p id="counter"></p>
+        <button id="button">Click</button>
+        <p id="cps"></p>
+        
+    </section>
+
+    <input type="text" id="display" readonly value="0">
+
+    <div class="buttons">
+        <button onclick="appendSymbol('7')">7</button>
+        <button onclick="appendSymbol('8')">8</button>
+        <button onclick="appendSymbol('9')">9</button>
+        <button onclick="appendSymbol('+')">+</button><br/>
+
+        <button onclick="appendSymbol('4')">4</button>
+        <button onclick="appendSymbol('5')">5</button>
+        <button onclick="appendSymbol('6')">6</button>
+        <button onclick="appendSymbol('-')">-</button><br/>
+
+        <button onclick="appendSymbol('1')">1</button>
+        <button onclick="appendSymbol('2')">2</button>
+        <button onclick="appendSymbol('3')">3</button>
+        <button onclick="appendSymbol('*')">*</button><br/>
+
+        <button onclick="clearAll()">C</button>
+        <button onclick="appendSymbol('0')">0</button>
+        <button onclick="calculate()">=</button>
+        <button onclick="appendSymbol('/')">/</button><br/>
+
+        <button onclick="appendSymbol('(')">(</button>
+        <button onclick="appendSymbol(')')">)</button>
+    </div>
+
+    <script>
+        document.addEventListener('selectstart', event => event.preventDefault());
+        document.addEventListener('contextmenu', event => event.preventDefault());
+
+        let count = Number(localStorage.getItem('clickCount')) || 0;
+        const counter = document.getElementById('counter');
+        const btn = document.getElementById('button');
+        let startTime = Number(localStorage.getItem('startTime')) || null;
+        const cps = document.getElementById('cps');
+
+        counter.textContent = 'Кликов: ' + count;
+
+        btn.addEventListener('click', function() {
+            if (startTime === null) {
+                startTime = Date.now();
+                localStorage.setItem('startTime', startTime);
+            }
+
+            count++;
+            counter.textContent = 'Кликов: ' + count;
+            localStorage.setItem('clickCount', count);
+
+            let time = (Date.now() - startTime) / 1000;
+            let clicks_per_sec = time > 0 ? (count / time) : 0;
+            cps.textContent = "Среднее количество кликов в секунду: " + clicks_per_sec;
+        });
+
+
+
+
+        let display = document.getElementById('display');
+        function appendSymbol(symbol) {
+            if (display.value === '0' && !isOperator(symbol) && symbol !== ')') {
+                display.value = symbol;
+            } else {
+                display.value += symbol;
+            }
+        }
+
+        function isOperator(symbol) {
+            return ['+', '-', '*', '/'].includes(symbol);
+        }
+
+        function clearAll() {
+            display.value = '0';
+        }
+
+        function tokenize(expr) {
+            return expr.match(/\d+|[+\-*/()]/g) || [];
+        }
+
+        function toRPN(tokens) {
+            const precedence = { '+': 1, '-': 1, '*': 2, '/': 2 };
+            const output = [];
+            const stack = [];
+
+            for (let token of tokens) {
+                if (!isNaN(token)) {
+                    output.push(token);
+                } else if (isOperator(token)) {
+                    while (stack.length > 0 &&
+                        isOperator(stack[stack.length - 1]) &&
+                        precedence[stack[stack.length - 1]] >= precedence[token]
+                    ) {
+                        output.push(stack.pop());
+                    }
+                    stack.push(token);
+
+                } else if (token === '(') {
+                    stack.push(token);
+                } else if (token === ')') {
+                    while (stack.length > 0 && stack[stack.length - 1] !== '(') {
+                        output.push(stack.pop());
+                    }
+                    stack.pop();
+                }
+            }
+
+            while (stack.length > 0) {
+                output.push(stack.pop());
+            }
+
+            return output;
+        }
+
+        function evalRPN(rpn) {
+            const stack = [];
+
+            for (let token of rpn) {
+                if (!isNaN(token)) {
+                    stack.push(parseFloat(token));
+                } else {
+                    const b = stack.pop();
+                    const a = stack.pop();
+                    switch (token) {
+                        case '+': stack.push(a + b); break;
+                        case '-': stack.push(a - b); break;
+                        case '*': stack.push(a * b); break;
+                        case '/':
+                            if (b === 0) {
+                                display.value = 'Ошибка';
+                                return null;
+                            }
+                            stack.push(a / b);
+                            break;
+                    }
+                }
+            }
+            return stack[0];
+        }
+
+        function calculate() {
+            try {
+                const tokens = tokenize(display.value);
+                const rpn = toRPN(tokens);
+                const result = evalRPN(rpn);
+                if (result === null || !isFinite(result)) {
+                    display.value = 'Ошибка';
+                } else {
+                    display.value = result;
+                }
+            } catch (e) {
+                display.value = 'Ошибка';
+            }
+        }
+    </script>
+</body>
+</html>

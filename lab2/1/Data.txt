@@ -1,0 +1,21 @@
+Картинки
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv3Oby8Cq11t-TxwGXffssxTtYFFexV4Wz6w&s - Abbey Road
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5P6-1BB7ApImY54faR4-Gq7J6nLOBGTYv9g&s - Revolver
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_vsJZfqPQlWTHbWjMK0vpiEd-sjMkj3ylwA&s - Rubber soul
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfZ1pXmmf-BhcSCwaI5cAz-iOjjChRwcyEBw&s - Sgt Pepper
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMuQvGHcpJGMR0WkjtlXKWOQRkM41xQ68x9Q&s - For Sale
+
+
+Хороший
+8.8.8.8
+1.1.1.1
+142.250.0.78
+13.107.21.200
+13.107.21.200
+
+Плохой
+77.88.8.8
+8.8.8.8
+1.1.1.1
+142.250.0.78
+151.101.1.69

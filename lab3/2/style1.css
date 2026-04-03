@@ -1,0 +1,20 @@
+.red { color: red; }
+.red_u {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: red;
+}
+.blue { color: blue; }
+.blue_u {
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: blue;
+}
+
+#Pif {
+    font-family: 'Comic Sans', cursive;
+}
+
+table {
+    background-color: aqua;
+}
