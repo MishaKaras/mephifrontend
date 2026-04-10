@@ -1,0 +1,14 @@
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 20px;
+}
+
+@for $n from 1 through 100 {
+  .n#{$n} {
+    color: rgb($n, 256 - $n, 0);
+    font-size: 18px;
+    font-weight: bold;
+  }
+}

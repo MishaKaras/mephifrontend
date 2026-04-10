@@ -1,0 +1,51 @@
+@bg-color: lightgray;
+@font-size: 14px;
+@gap: 16px;
+
+.gray-block(@height: auto) {
+  background-color: @bg-color;
+  padding: 12px;
+  text-align: center;
+  font-size: @font-size;
+  margin-bottom: @gap;
+  height: @height;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: @gap;
+}
+
+nav {
+  .gray-block();
+
+  a {
+    margin: 0 10px;
+    font-size: @font-size;
+  }
+}
+
+.charact {
+  .gray-block(100px);
+}
+
+.columns {
+  display: flex;
+  gap: @gap;
+  margin-bottom: @gap;
+
+  .column {
+    .gray-block(70px);
+    flex: 1;
+  }
+}
+
+footer {
+  .gray-block();
+}

@@ -1,0 +1,608 @@
+.numbers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 20px;
+}
+
+.n1 {
+  color: rgb(1, 255, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n2 {
+  color: rgb(2, 254, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n3 {
+  color: rgb(3, 253, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n4 {
+  color: rgb(4, 252, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n5 {
+  color: rgb(5, 251, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n6 {
+  color: rgb(6, 250, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n7 {
+  color: rgb(7, 249, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n8 {
+  color: rgb(8, 248, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n9 {
+  color: rgb(9, 247, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n10 {
+  color: rgb(10, 246, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n11 {
+  color: rgb(11, 245, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n12 {
+  color: rgb(12, 244, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n13 {
+  color: rgb(13, 243, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n14 {
+  color: rgb(14, 242, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n15 {
+  color: rgb(15, 241, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n16 {
+  color: rgb(16, 240, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n17 {
+  color: rgb(17, 239, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n18 {
+  color: rgb(18, 238, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n19 {
+  color: rgb(19, 237, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n20 {
+  color: rgb(20, 236, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n21 {
+  color: rgb(21, 235, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n22 {
+  color: rgb(22, 234, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n23 {
+  color: rgb(23, 233, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n24 {
+  color: rgb(24, 232, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n25 {
+  color: rgb(25, 231, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n26 {
+  color: rgb(26, 230, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n27 {
+  color: rgb(27, 229, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n28 {
+  color: rgb(28, 228, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n29 {
+  color: rgb(29, 227, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n30 {
+  color: rgb(30, 226, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n31 {
+  color: rgb(31, 225, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n32 {
+  color: rgb(32, 224, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n33 {
+  color: rgb(33, 223, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n34 {
+  color: rgb(34, 222, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n35 {
+  color: rgb(35, 221, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n36 {
+  color: rgb(36, 220, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n37 {
+  color: rgb(37, 219, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n38 {
+  color: rgb(38, 218, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n39 {
+  color: rgb(39, 217, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n40 {
+  color: rgb(40, 216, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n41 {
+  color: rgb(41, 215, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n42 {
+  color: rgb(42, 214, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n43 {
+  color: rgb(43, 213, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n44 {
+  color: rgb(44, 212, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n45 {
+  color: rgb(45, 211, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n46 {
+  color: rgb(46, 210, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n47 {
+  color: rgb(47, 209, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n48 {
+  color: rgb(48, 208, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n49 {
+  color: rgb(49, 207, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n50 {
+  color: rgb(50, 206, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n51 {
+  color: rgb(51, 205, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n52 {
+  color: rgb(52, 204, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n53 {
+  color: rgb(53, 203, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n54 {
+  color: rgb(54, 202, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n55 {
+  color: rgb(55, 201, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n56 {
+  color: rgb(56, 200, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n57 {
+  color: rgb(57, 199, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n58 {
+  color: rgb(58, 198, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n59 {
+  color: rgb(59, 197, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n60 {
+  color: rgb(60, 196, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n61 {
+  color: rgb(61, 195, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n62 {
+  color: rgb(62, 194, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n63 {
+  color: rgb(63, 193, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n64 {
+  color: rgb(64, 192, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n65 {
+  color: rgb(65, 191, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n66 {
+  color: rgb(66, 190, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n67 {
+  color: rgb(67, 189, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n68 {
+  color: rgb(68, 188, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n69 {
+  color: rgb(69, 187, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n70 {
+  color: rgb(70, 186, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n71 {
+  color: rgb(71, 185, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n72 {
+  color: rgb(72, 184, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n73 {
+  color: rgb(73, 183, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n74 {
+  color: rgb(74, 182, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n75 {
+  color: rgb(75, 181, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n76 {
+  color: rgb(76, 180, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n77 {
+  color: rgb(77, 179, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n78 {
+  color: rgb(78, 178, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n79 {
+  color: rgb(79, 177, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n80 {
+  color: rgb(80, 176, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n81 {
+  color: rgb(81, 175, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n82 {
+  color: rgb(82, 174, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n83 {
+  color: rgb(83, 173, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n84 {
+  color: rgb(84, 172, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n85 {
+  color: rgb(85, 171, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n86 {
+  color: rgb(86, 170, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n87 {
+  color: rgb(87, 169, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n88 {
+  color: rgb(88, 168, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n89 {
+  color: rgb(89, 167, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n90 {
+  color: rgb(90, 166, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n91 {
+  color: rgb(91, 165, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n92 {
+  color: rgb(92, 164, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n93 {
+  color: rgb(93, 163, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n94 {
+  color: rgb(94, 162, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n95 {
+  color: rgb(95, 161, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n96 {
+  color: rgb(96, 160, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n97 {
+  color: rgb(97, 159, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n98 {
+  color: rgb(98, 158, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n99 {
+  color: rgb(99, 157, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.n100 {
+  color: rgb(100, 156, 0);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=style.css.map */
