@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue task 1</title>
+</head>
+<body>
+    <div id="app">
+        <h2>Count: {{ count }}</h2>
+        <button @click="increment">Click!</button>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        const { createApp, ref } = Vue
+
+        createApp({
+            setup() {
+                const count = ref(0)
+                const increment = () => { count.value++ }
+                return { count, increment }
+            }
+        }).mount('#app')
+    </script>
+</body>
+</html>
